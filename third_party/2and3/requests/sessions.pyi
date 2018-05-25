@@ -55,7 +55,7 @@ class SessionRedirectMixin:
     def rebuild_auth(self, prepared_request, response): ...
     def rebuild_proxies(self, prepared_request, proxies): ...
 
-_Data = Union[None, bytes, MutableMapping[Text, Text], IO]
+_Data = Union[None, str, bytes, MutableMapping[Text, Text], IO]
 
 _Hook = Callable[[Response], Any]
 _Hooks = MutableMapping[Text, List[_Hook]]
